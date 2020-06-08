@@ -4,7 +4,7 @@
     --cyan: hsl(180, 62%, 55%);
     --blue: hsl(212, 86%, 64%);
     --backgroundcolor:  hsl(0, 0%, 98%);
-}
+} 
 
 body{
     font-family: Poppins;
@@ -19,7 +19,6 @@ body{
     justify-content: center;
     align-items: center;  
     max-width: 100vw;
-    height: 100vh;
 }
 
 .header{
@@ -79,7 +78,7 @@ body{
     display: flex;
     flex-direction: column;
     align-self: center;
-    /* justify-content: center; */
+    justify-content: center;
     justify-self: center;
 }
 
@@ -105,3 +104,16 @@ body{
 .blue{
     border-top: 3px solid var(--blue);
 }
+
+@media only screen and (max-width: 730px) {
+  .cardscontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .cardHolder{
+         width: 100%;
+         margin: 15px auto;
+     }
+  }
