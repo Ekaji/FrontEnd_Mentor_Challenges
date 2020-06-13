@@ -1,0 +1,380 @@
+:root{
+    --soft-blue:hsl(231, 69%, 60%);
+    --soft-red:hsl(0, 94%, 66%);
+    --greyish-blue: hsl(229, 8%, 60%);
+    --dark-blue:hsl(229, 31%, 21%);
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+p, li, li > a{
+    color: var(--greyish-blue);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 16px;
+}
+
+.bookmark, .navigation{
+    margin: auto 0;
+    width: 50%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation > ul > li{
+    display: inline-flex;
+    list-style-type: none;
+    padding-right: 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#login > a, .email > a > button{
+    background-color: var(--soft-red);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+
+a:hover, li:hover{
+    color: var(--soft-red);
+}
+
+#login > a:hover, .email > a > button:hover{
+    border: 2px solid var(--soft-red);    background-color: white;
+    padding: 8px 18px;
+    color: var(--dark-blue);
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+}
+
+.introtext{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 40px;
+    font-size: 18px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+}
+
+.features > p{
+    align-self: center;
+    width:35%;
+    margin-top: 5px;
+}
+
+.featureTabs > ul {
+    padding: 0;
+    border-bottom: 1px solid var(--greyish-blue);
+}
+
+.featureTabs > ul > li{
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 20px 40px;
+}
+
+.featureTabs > ul > li:hover{
+    color: var(--soft-red);
+}
+
+.featureTabs > ul > li:first-child{
+    border-bottom: 2px solid var(--soft-red);
+}
+
+.featureimagetext{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.featuretext, .featureimg{
+    text-align: left;
+    margin: 30px 40px;
+}
+
+.featuretext{
+    width: 40%;
+    font-size: 18px;
+    margin: 100px;
+}
+
+.downloadextensions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.extension{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    margin: 10px;
+    box-shadow: 10px 25px 30px var(--greyish-blue);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.extension > img{
+    margin: 20px 0px;
+}
+
+.extension > h4{
+   margin-bottom: 0px;
+   margin-top: 10px;
+}
+
+.extension > p{
+    margin-top: 0px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.extension > a{
+    margin: 0px 15px 20px ;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.downloadtext{
+    text-align: center;
+    width: 40%;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+div .forChrome{
+    margin-top: 0px;
+}
+
+div .forFirefox{
+    margin-top: 40px;
+}
+
+div .forOpera{
+    margin-top: 80px;
+}
+
+a > button{
+    color: white;
+    background-color: var(--soft-blue);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    outline: none;
+}
+
+.softBlueHover:hover{
+    border: 1px solid var(--soft-blue);
+    background-color: white ;
+    color: var(--soft-blue);
+    padding: 14px 23px;
+}
+
+.darkBlueHover:hover{
+    border: 1px solid var(--dark-blue);
+    background-color: white ;
+    color: var(--dark-blue);
+    padding: 13px 23px;
+
+}
+
+.questionandanswer{
+    width: 100%;
+}
+
+.questionscontainer{
+    align-self: center;
+    width: 50%;
+    margin: 50px auto;
+}
+
+#questionone:checked ~ .content,
+#questiontwo:checked ~ .content,
+#questionthree:checked ~ .content,
+#questionfour:checked ~ .content
+{
+    display: block; 
+}
+
+.content{
+    display: none;
+}
+
+.question  > label{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+}
+
+.questiontext{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.question{
+    position: relative;
+    padding: 15px 100px 15px 0;
+    border-bottom: 1px solid var(--greyish-blue);
+    height: 100%;
+}
+
+.question:first-child{
+    border-top: 1px solid var(--greyish-blue);
+}
+
+.question > input{
+    position: absolute;
+    right: 0;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+}
+
+.question > button {
+    position: absolute;
+    right: 0;
+    text-align: end;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.moreInfo{
+    margin: 50px auto 80px;
+}
+
+.moreInfo, .contactcontainer{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.contact{
+    background-color: var(--soft-blue);
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.contactcontainer{
+    padding: 60px;
+}
+
+.contactcontainer > p{
+    color: white;
+}
+
+.contactcontainer > h1{
+    text-align: center;
+    width: 35%;
+}
+.email{
+    margin: 0px auto;
+}
+
+div.email > a > button{
+    padding: 15px 20px;
+}
+
+div.email > a > button:hover{
+    padding: 13px 18px;
+}
+
+#email{
+    border: none;
+    padding: 15px 40px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.email > a > button{
+    margin: 0px;
+}
+
+.bookmarkfooter{
+    display: flex;
+    background-color: var(--dark-blue);
+}
+
+.bookmarkcontainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 120px;
+}
+
+.bookmark{
+    display: inline-flex;
+}
+
+.footernavigation{
+   display: flex;
+}
+
+.footernavigation > ul > li, .social > span > img{
+    display: inline-flex;
+    padding-right: 20px;
+}
+
+.footernavigation > ul > li > a{
+    font-size: 14px;
+}
+
+.footernavigation > ul{
+    margin: 0;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
