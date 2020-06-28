@@ -1,0 +1,761 @@
+:root{
+    --soft-blue:hsl(231, 69%, 60%);
+    --soft-red:hsl(0, 94%, 66%);
+    --greyish-blue: hsl(229, 8%, 60%);
+    --dark-blue:hsl(229, 31%, 21%);
+}
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+p, li, li > a{
+    color: var(--greyish-blue);
+}
+
+ 
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 60px;
+
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .bookmark, .navigation{
+        margin: auto 0; 
+    }
+
+    .bookmark{
+        width: 20%;
+    }
+    
+    .navigation{
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+    }
+    
+    .navigation > ul > li{
+        display: inline-flex;
+        list-style-type: none;
+        padding-right: 25px;
+    }
+
+    .hamburgerbookmark{
+        display: none;
+    }
+    
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    #login > a, .email > a > button{
+        background-color: var(--soft-red);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 60px;
+    }
+    
+    a:hover, li:hover{
+        color: var(--soft-red);
+    }
+    
+    #login > a:hover, .email > a > button:hover{
+        border: 2px solid var(--soft-red);    background-color: white;
+        padding: 8px 18px;
+        color: var(--dark-blue);
+    }
+    
+    .intro{
+        display: flex;
+        /* flex-direction: row; */
+        margin: 50px auto;
+        justify-content: center;
+        width: 95vw;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .introtext{
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0px;
+        font-size: 18px;
+        width: 40%;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    .features > p{
+        align-self: center;
+        width:35%;
+        margin-top: 5px;
+    }
+    
+    .featureTabs > ul {
+        padding: 0;
+        border-bottom: 1px solid var(--greyish-blue);
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tabbutton {
+        width: 223px;
+        margin: 0px;
+    }
+    
+    .divs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95vw;
+    }
+
+    .featuretext{
+        text-align: left;
+        margin: 30px 40px;
+    }
+
+    .featureimg{
+        margin-top: 30px;
+    }
+    
+    .featuretext{
+        width: 35%;
+        font-size: 18px;
+        margin: 70px 50px;
+    }
+    
+    .featureTabs > ul > a > li{
+        list-style-type: none;
+        margin-top: 10px;
+        padding: 20px 40px;
+        text-align: center;
+    }
+    
+    .featureTabs > ul > a > li:hover{
+        color: var(--soft-red);
+    }
+    
+    .featureimagetext{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .downloadextensions{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .extension{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 23%;
+        margin: 10px;
+        box-shadow: 10px 25px 30px var(--greyish-blue);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .extension > img{
+        margin: 20px 0px;
+    }
+    
+    .extension > h4{
+       margin-bottom: 0px;
+       margin-top: 10px;
+    }
+    
+    .extension > p{
+        margin-top: 0px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .extension > a{
+        margin: 0px 15px 20px ;
+    }
+    
+    .download{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+    }
+    
+    .downloadtext{
+        text-align: center;
+        width: 40%;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    div .forChrome{
+        margin-top: 0px;
+    }
+    
+    div .forFirefox{
+        margin-top: 40px;
+    }
+    
+    div .forOpera{
+        margin-top: 80px;
+    }
+    
+    a > button{
+        color: white;
+        background-color: var(--soft-blue);
+        border: none;
+        border-radius: 5px;
+        padding: 15px 25px;
+        outline: none;
+    }
+    
+    .softBlueHover:hover{
+        border: 1px solid var(--soft-blue);
+        background-color: white ;
+        color: var(--soft-blue);
+        padding: 14px 23px;
+    }
+    
+    .darkBlueHover:hover{
+        border: 1px solid var(--dark-blue);
+        background-color: white ;
+        color: var(--dark-blue);
+        padding: 13px 23px;
+    }
+    
+    .questionandanswer{
+        width: 100%;
+    }
+    
+    .questionscontainer{
+        align-self: center;
+        width: 50%;
+        margin: 50px auto;
+    }
+    
+    .hide{
+        display: none;
+    }
+
+    .question  > label{
+        position: relative;
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .questiontext{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .question{
+        position: relative;
+        padding: 15px 100px 15px 0;
+        border-bottom: 1px solid var(--greyish-blue);
+        height: 100%;
+    }
+    
+    .question:first-child{
+        border-top: 1px solid var(--greyish-blue);
+    }
+    
+    .question > input{
+        position: absolute;
+        right: 0;
+        text-align: end;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+    }
+    
+    .question:hover{
+        color: var(--soft-red);
+    }
+    
+    .question:hover > button > svg path{
+        stroke: hsl(0, 94%, 66%);
+    }
+    
+    .question > .rotateUp > svg path{
+        stroke: hsl(0, 94%, 66%);
+    }
+    
+    .question > .rotateUp ~ div {
+        stroke: hsl(0, 94%, 66%);
+    }
+    
+    .rotateUp ~ label{
+        color: var(--soft-red);
+    }
+    
+    .question > .rotateUp{
+        transform: rotate(180deg);
+        transition: 1s;
+    }
+    
+    .question > .rotateDown{
+        transform: rotate(0deg);
+        transition: 1s;
+    }
+    
+    .question > button {
+        position: absolute;
+        right: 0;
+        text-align: end;
+        border: none;
+        background-color: #ffffff;
+        outline: none;
+        margin: auto;
+    }
+    
+    .moreInfo{
+        margin: 50px auto 80px;
+    }
+    
+    .moreInfo, .contactcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact{
+        background-color: var(--soft-blue);
+        color: #ffffff;
+        font-size: 15px;
+    }
+    
+    .contactcontainer{
+        padding: 60px;
+    }
+    
+    .contactcontainer > p{
+        color: white;
+    }
+    
+    .contactcontainer > h1{
+        text-align: center;
+        width: 35%;
+    }
+    
+    .email{
+        margin: 0px auto;
+    }
+    
+    div.email > a > button{
+        padding: 15px 20px;
+    }
+    
+    div.email > a > button:hover{
+        padding: 13px 18px;
+    }
+    
+    #email{
+        border: none;
+        padding: 15px 40px;
+        border-radius: 3px;
+        margin-left: 5px;
+    }
+    
+    .email > a > button{
+        margin: 0px;
+    }
+    
+    .bookmarkfooter{
+        display: flex;
+        background-color: var(--dark-blue);
+    }
+    
+    .bookmarkcontainer{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px 120px;
+    }
+    
+    .bookmark{
+        display: inline-flex;
+        width: 90%;
+    }
+
+    .bookmark > svg:hover path, .social > span > svg:hover path {
+        fill: var(--soft-red)
+    }
+    
+    .footernavigation{
+       display: flex;
+    }
+    
+    .footernavigation > ul , .social > span > img{
+        display: inline-flex;
+        list-style-type: none;
+    }
+    
+    .footernavigation > ul > li > a{
+        font-size: 14px;
+        margin: 10px;
+    }
+    
+    .footernavigation > ul{
+        margin: 0px;
+    }
+    
+    .social{
+        display: flex;
+        justify-content: flex-end;
+        width: 10%;
+    } 
+
+    .social > span {
+        margin: 10px;
+    }
+
+    hr{
+        width: 80%;
+        background: var(--soft-red);
+        border: none;
+        height: 3px;
+        margin: 0px 0px 0px 20px;
+    }
+    .icon{
+        display: none;
+    }
+    
+
+
+/* for mobile phones */
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 768px) {
+    body{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    p{
+        line-height: 25px;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        align-content: center;
+        width: 100%; 
+        padding: 0px;
+        margin: 100vw; 
+        margin: auto ;
+        overflow: hidden;
+    }
+
+    .hamburgerbookmark{
+        display: block;
+    }
+    .icon{
+        position: absolute;
+        display: block;
+       right: 15px;
+        z-index: 1000;
+    }
+    .bookmark{
+        margin-top: 15px;
+    }
+
+    .menushow{
+        /* display: flex; */
+        flex-direction: column;
+        background-color: var(--dark-blue);
+    }
+
+    .navbar{
+        position: relative;
+    }
+
+    #login{
+        margin: 0px auto;
+        padding: 0px;
+        width: 100vw;
+    }
+    #login > a {
+        margin: 30px;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+    }
+    #login > a:hover {
+        background-color: transparent;
+        border: 2px solid var(--greyish-blue);
+        color: #ffffff;
+    }
+
+    .hamburgermenu{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: center;
+        background-color: hsla(229, 31%, 21%, 0.9);
+        margin-top: -20px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .hamburgerbookmark{
+        position: relative;
+        left: 0px;
+       margin-top: 20px;
+       margin-left: -50px;
+    }
+    .hamburgermenu > li > a {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    .hamburgermenu > li:first-of-type{
+        border-top: 1px solid var(--greyish-blue);
+    }
+    .hamburgermenu > #login {
+        border: none;  
+    }
+
+    .hamburgerbookmark{
+        margin-left: -200px ;
+        margin-bottom: 40px;
+    } 
+
+    .hamburgerbookmark > svg path{
+        fill: #ffffff 
+    }
+
+    ul.hamburgermenu > li {
+        border-bottom: 1px solid var(--greyish-blue);
+       justify-content: center;
+       padding: 10px 0px 10px ;
+       width: 80vw;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: -80px;
+        overflow: hidden;
+    }
+
+    .introtext{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        font-size: 16px;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .introtext > h1{
+        padding: 50px 0px 0px;
+        margin: 0px;
+    }
+
+    .introtext > p{
+        padding:  25px;
+        margin: 0px;
+    }
+
+    .introimg{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .introimg > img{
+        object-fit: contain;
+    }
+
+    .divs{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 100%;
+    }
+    .featureTabs > Ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .featureimagetext{
+        height: 110vh;
+    }
+
+    .featureimg{
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        width: 70vw;
+        height: 20vh;
+    }
+    .featureimg > img{
+        height: 40vh;
+        object-fit: contain;
+    }
+    .features{
+        width: 100vw;
+    }
+    .features > p{
+        width: 80%;
+        justify-content: center;
+    }
+    .featuretext{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .featuretext > p{
+        margin: 30px 0px;
+    }
+
+    .tabbutton {
+        border-top: 1px solid var(--greyish-blue);
+    }
+
+    .featureTabs > ul > a > li {
+        margin-top: 0px;
+    }
+
+    .hide{
+        display: none;
+    }
+    .download{
+        width: 90vw;
+        margin: auto;
+    }
+    .downloadtext{
+        width: 100%;
+        margin: 30px;
+    }
+    .downloadtext > p{
+        margin: 30px 10px;
+    }
+    .downloadextensions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .extension{
+        width: 80vw;
+    }
+    .questionscontainer{
+        width: 80vw;
+        font-size: 16px;
+    }
+    .questionandanswer{
+        margin: 30px;
+    }
+    .questiontext > p{
+        margin: 30px 0px;
+    }
+    .content > p{
+        width: 80vw;
+        text-align: center;
+    }
+    footer{
+        margin: 0px;
+        width: 100vw;
+    }
+    .contactcontainer > h1 {
+        width: 100%;
+    }
+    .email > a > button {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+    }
+ 
+    .bookmarkcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px;
+    }
+    .bookmark{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footernavigation > ul{
+        display: flex;
+        padding-left: 0px;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .footernavigation > ul > li {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .footernavigation > ul > li > a{
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    .social{
+        width: 30vw;
+        margin: 20px;
+    }
+
+    .socialnav{
+        width: 23vw;
+        margin-top: 30vh;
+        justify-content: flex-end;
+    }
+
+    hr{
+        width: 70%;
+        margin: 0px auto;
+        background: var(--soft-red);
+        border: none;
+        height: 3px;
+}
+
+}
