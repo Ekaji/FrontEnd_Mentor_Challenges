@@ -11,10 +11,8 @@ let hamburgerToggle = document.querySelector(".hamburgermenu");
 hamburger.addEventListener('click', () => {
     if (hamburgerToggle.style.display == "flex") {
         hamburgerToggle.style.display = "none";
-        console.log(1)
       } else {
         hamburgerToggle.style.display = "flex";
-        console.log(2)
       }
 })
 
